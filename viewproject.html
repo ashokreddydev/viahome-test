@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="ThemeBucket">
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <title>GetViaHome - User Dashboard</title>
+
+    <!--Core CSS -->
+    <link href="bs3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-reset.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet" />
+	 <link href="css/custom.css" rel="stylesheet"/>
+
+</head>
+
+<body>
+
+<section id="container" >
+<!--header start-->
+<header class="header fixed-top clearfix">
+<!--logo start-->
+<div class="brand">
+    <a href="user-dashboard.html" class="logo">
+        <img src="images/main-logo.png" class="img-responsive" />
+    </a>
+    <div class="sidebar-toggle-box">
+        <div class="fa fa-bars"></div>
+    </div>
+</div>
+<!--logo end-->
+
+
+<div class="top-nav clearfix">
+    <!--search & user info start-->
+    <ul class="nav pull-right top-menu">
+        <!-- user login dropdown start-->
+        <li class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                <img alt="" src="images/default.png">
+                <span class="username">User</span>
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu extended logout">
+                <li><a href="user-profile.html"><i class=" fa fa-suitcase"></i>Profile</a></li>
+              
+                <li><a href="index.html"><i class="fa fa-key"></i> Log Out</a></li>
+            </ul>
+        </li>
+        <!-- user login dropdown end -->
+    </ul>
+</div>
+</header>
+<!--header end-->
+<aside>
+    <div id="sidebar" class="nav-collapse">
+        <!-- sidebar menu start-->
+        <div class="leftside-navigation">
+            <ul class="sidebar-menu" id="nav-accordion">
+                <li>
+                    <a href="user-dashboard.html">
+                        <i class="fa fa-dashboard"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="sub-menu">
+                    <a href="javascript:;" class="active">
+                        <i class="fa fa-building"></i>
+                        <span>Projects</span>
+                    </a>
+                    <ul class="sub">
+                         <li><a href="createproject.html">Create Project</a></li>
+                         <li><a href="manageprojects.html">Manage Projects</a></li>
+                         <li class="active"><a href="viewproject.html">View Project</a></li>
+<!--                         <li><a href="editproject.html">Edit Project</a></li>-->
+                       </ul>
+                </li>
+            </ul>            
+        </div>
+        <!-- sidebar menu end-->
+    </div>
+</aside>
+<!--sidebar end-->
+    <!--main content start-->
+    <section id="main-content">
+        <section class="wrapper">
+		<div class="row">
+			<div class="col-md-12">
+                    <ul class="breadcrumbs-alt">
+                        <li>
+                            <a href="user-dashboard.html" class="">Dashboard</a>
+                        </li>
+                         <li>
+                            <a class="current" href="#">View Project</a>
+                        </li>
+                      </ul>
+					
+<!--
+					<div id="sb-search" class="sb-search">
+						<form>
+							<input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search">
+							<input class="sb-search-submit" type="submit" value="">
+							<span class="sb-icon-search"></span>
+						</form>
+					</div>
+-->
+                </div>
+		</div>
+        <!-- table start-->
+			<section class="panel recent-project">
+                    <header class="panel-heading main-bg">
+                        Projects List
+                        <!-- <span class="tools pull-right">
+                            <a href="javascript:;" class="fa fa-chevron-down"></a>
+                            <a href="javascript:;" class="fa fa-cog"></a>
+                            <a href="javascript:;" class="fa fa-times"></a>
+                         </span> -->
+                    </header>
+                    <div class="panel-body table-responsive">
+                        <table class="table  table-hover general-table">
+                            <thead>
+                            <tr>
+								<th>Project Name</th>
+                                <th>Project Type</th>
+                                <th>Square Footage</th>
+                                <th>City</th>
+                                <th>Purchase Price ($)</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Gutsy</td>
+                                <td>Acquisition / Renovation</td>
+                                <td>8934</td>
+                                <td>Chicago</td>
+                                <td>85000</td>
+							
+                            </tr>
+                            <tr>
+                                <td>Square</td>
+                                <td>Acquisition / Renovation</td>
+                                <td>235000</td>
+                                <td>Anchorage</td>
+                                 <td>24000000</td>
+                                
+								
+                            </tr>
+							<tr>
+                                <td>Wrench</td>
+                                <td>Acquisition / Renovation</td>
+                                <td>8934</td>
+                                <td>Chicago</td>
+                               <td>250000</td>
+                                
+								
+                            </tr>
+                            <tr>
+                                <td>Hook</td>
+                                <td>Acquisition / Renovation</td>
+                                <td>1600</td>
+                                <td>Charlotte</td>
+                                <td>95000</td>
+                                
+								
+                            </tr>
+                            <tr>
+                                <td>Serve</td>
+                                <td>Acquisition / Renovation</td>
+                                <td>8934</td>
+                                <td>Chicago</td>
+                                <td>85000</td>
+                                
+                            </tr>
+                                <tr>
+                                <td>Rebel</td>
+                                <td>Acquisition / Renovation</td>
+                                <td>8934</td>
+                                <td>Chicago</td>
+                                <td>60000</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>Subdivision</td>
+                                <td>Acquisition / Renovation</td>
+                                <td>8934</td>
+                                <td>Chicago</td>
+                                <td>400000</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>Cobra</td>
+                                <td>Acquisition / Renovation</td>
+                                <td>8934</td>
+                                <td>New York</td>
+                                <td>450000</td>
+                               
+                            </tr>
+                                <tr>
+                                <td>Antique</td>
+                                <td>Acquisition / Renovation</td>
+                                <td>8000</td>
+                                <td>Chicago</td>
+                                <td>0</td>
+                                
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+        <!-- table end-->
+        </section>
+    </section>
+    <!--main content end-->
+
+
+</section>
+
+<!-- Placed js at the end of the document so the pages load faster -->
+
+<!--Core js-->
+<script src="js/jquery.js"></script>
+<script src="bs3/js/bootstrap.min.js"></script>
+<script class="include" type="text/javascript" src="js/jquery.dcjqaccordion.2.7.js"></script>
+<script src="js/jquery.scrollTo.min.js"></script>
+<script src="js/jQuery-slimScroll-1.3.0/jquery.slimscroll.js"></script>
+<script src="js/jquery.nicescroll.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<!--common script init for all pages-->
+<script src="js/scripts.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/uisearch.js"></script>
+
+
+<!--
+<script>
+			new UISearch( document.getElementById( 'sb-search' ) );
+		</script>
+-->
+
+</body>
+</html>

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="ThemeBucket">
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <title>GetViaHome - Admin Dashboard</title>
+
+    <!--Core CSS -->
+    <link href="bs3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-reset.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet" />
+	 <link href="css/custom.css" rel="stylesheet"/>
+
+</head>
+
+<body>
+
+<section id="container" >
+<!--header start-->
+<header class="header fixed-top clearfix">
+<!--logo start-->
+<div class="brand">
+    <a href="admin-dashboard.html" class="logo">
+        <img src="images/main-logo.png" class="img-responsive" />
+    </a>
+    <div class="sidebar-toggle-box">
+        <div class="fa fa-bars"></div>
+    </div>
+</div>
+<!--logo end-->
+
+
+<div class="top-nav clearfix">
+    <!--search & user info start-->
+    <ul class="nav pull-right top-menu">
+        <!-- <li>
+            <input type="text" class="form-control search" placeholder=" Search">
+        </li> -->
+        <!-- user login dropdown start-->
+        <li class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                <img alt="" src="images/default.png">
+                <span class="username">Admin</span>
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu extended logout">
+                <li><a href="profile.html"><i class=" fa fa-suitcase"></i>Profile</a></li>
+              
+                <li><a href="index.html"><i class="fa fa-key"></i> Log Out</a></li>
+            </ul>
+        </li>
+        <!-- user login dropdown end -->
+        <!-- <li>
+            <div class="toggle-right-box">
+                <div class="fa fa-bars"></div>
+            </div>
+        </li> -->
+    </ul>
+    <!--search & user info end-->
+</div>
+</header>
+<!--header end-->
+<aside>
+    <div id="sidebar" class="nav-collapse">
+        <!-- sidebar menu start-->
+        <div class="leftside-navigation">
+            <ul class="sidebar-menu" id="nav-accordion">
+                <li>
+                    <a href="admin-dashboard.html">
+                        <i class="fa fa-dashboard"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="sub-menu">
+                    <a href="javascript:;" class="active">
+                        <i class="fa fa-building"></i>
+                        <span>Configuration</span>
+                    </a>
+                    
+                       <ul class="sub">
+                        <li><a href="medianincome.html" data-placement="top" data-toggle="tooltip"  data-original-title="Median  Income">Median Income</a></li>
+                        <li class="active"><a href="fairmarketrents.html" data-placement="top" data-toggle="tooltip"  data-original-title="Fair Market Rents">FMR Rents</a></li>
+                       <li><a href="renovationcostassumptions.html" data-placement="top" data-toggle="tooltip"  data-original-title="Renovation Cost Assumptions">RC Assumptions</a></li>
+
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="manageusers.html">
+                        <i class="fa fa-users"></i>
+                        <span>Users</span>
+                    </a>
+                </li>
+                 <li>
+                    <a href="admindashboardprojectslist.html">
+                        <i class="fa fa-tasks"></i>
+                        <span>Projects</span>
+                    </a>
+                
+                </li>
+
+
+            </ul>            </div>
+        <!-- sidebar menu end-->
+    </div>
+</aside>
+<!--sidebar end-->
+    <!--main content start-->
+    <section id="main-content">
+        <section class="wrapper">
+		<div class="row">
+			<div class="col-md-6 col-xs-12">
+                    <ul class="breadcrumbs-alt">
+                        <li>
+                            <a href="admin-dashboard.html" class="">Dashboard</a>
+                        </li>
+                         <li>
+                            <a class="current" href="fairmarketrents.html">FMR Rents</a>
+                        </li>
+                      <!--   <li>
+                            <a class="current" href="#">Request Project</a>
+                        </li>  -->
+                    </ul>
+					
+					<!-- <div id="sb-search" class="sb-search">
+						<form>
+							<input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search">
+							<input class="sb-search-submit" type="submit" value="">
+							<span class="sb-icon-search"></span>
+						</form>
+					</div> -->
+                </div>
+				<div class="col-md-6 brfileadjust">
+					<div class="form-group col-md-10">
+						<input type="file" name="img[]" class="file">
+						<div class="input-group pull-right">
+						  <span class="input-group-addon"><i class="fa fa-file"></i></span>
+						  <input type="text" class="form-control custom-input" disabled placeholder="Upload File">
+						  <span class="input-group-btn">
+							<button class="browse default-btn btn" type="button"><i class="fa fa-search"></i> Browse</button>
+						  </span>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<a class="default-btn pull-right" href="addfairmarketrents.html">Add</a>
+					</div>
+					
+				</div>
+		</div>
+        <!-- page start-->
+			<section class="panel">
+                    <header class="panel-heading main-bg">
+                       Fair Market Rents
+                       
+                    </header>
+                    <div class="panel-body table-responsive">
+                        <table class="table  table-hover general-table mangaeicons">
+                            <thead>
+                            <tr class="tblalignmentmedianincome">
+								
+                                <th><span class="pull-left">Area Name</span></th>
+                                <th>2017&nbsp;Median&nbsp;Income<br><span align="center">($)</span></th>
+                                <th>1&nbsp;Person <br><span align="center">($)</span></th>
+                                <th>2&nbsp;People <br><span align="center">($)</span></th>
+                                <th>3&nbsp;People <br><span align="center">($)</span></th>
+                                <th>4&nbsp;People <br><span align="center">($)</span></th>
+                                <th>5&nbsp;People <br><span align="center">($)</span></th>
+                                <th>6&nbsp;People <br><span align="center">($)</span></th>
+                                <th>7&nbsp;People <br><span align="center">($)</span></th>
+                                <th>8&nbsp;People <br><span align="center">($)</span></th>
+                                <th>State</th>
+                                <th width="100"><span class="pull-left">Actions&nbsp;&nbsp;</span></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                          <tr>
+						<td>Montgomery, AL MSA</td>
+						<td class="text-right">1492.5</td>
+						<td class="text-right">627</td>
+						<td class="text-right">717</td>
+						<td class="text-right">807</td>
+						<td class="text-right">895.5</td>
+						<td class="text-right">967.5</td>
+						<td class="text-right">1039.5</td>
+						<td class="text-right">1111.5</td>
+						<td class="text-right">1183.5</td>
+						<td>  AL</td>
+						<td>
+									<a href="editfairmarketrents.html" class="edit2"><i data-placement="top" data-toggle="tooltip" class="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" class="delete2"><i data-placement="top" data-toggle="tooltip" class="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
+				        </td>
+					</tr>
+					<tr>
+						<td>Daphne-Fairhope-Foley, AL MSA</td>
+						<td class="text-right">1537.5</td>
+						<td class="text-right">646.5</td>
+						<td class="text-right">738</td>
+						<td class="text-right">831</td>
+						<td class="text-right">922.5</td>
+						<td class="text-right">997.5</td>
+						<td class="text-right">1071</td>
+						<td class="text-right">1144.5</td>
+						<td class="text-right">1218</td>
+						<td>  AL</td>
+						<td>
+									<a href="editfairmarketrents.html" class="edit2"><i data-placement="top" data-toggle="tooltip" class="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" class="delete2"><i data-placement="top" data-toggle="tooltip" class="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
+				        </td>
+					</tr>
+					<tr>
+						<td>Barbour County, AL</td>
+						<td class="text-right">1152.5</td>
+						<td class="text-right">484.5</td>
+						<td class="text-right">553.5</td>
+						<td class="text-right">622.5</td>
+						<td class="text-right">691.5</td>
+						<td class="text-right">747</td>
+						<td class="text-right">802.5</td>
+						<td class="text-right">858</td>
+						<td class="text-right">913.5</td>
+						<td>  AL</td>
+						<td>
+									<a href="editfairmarketrents.html" class="edit2"><i data-placement="top" data-toggle="tooltip" class="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" class="delete2"><i data-placement="top" data-toggle="tooltip" class="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
+				        </td>
+					</tr>
+					<tr>
+						<td>Birmingham-Hoover, AL HUD Metro FMR Area</td>
+						<td class="text-right">1577.5</td>
+						<td class="text-right">663</td>
+						<td class="text-right">757.5</td>
+						<td class="text-right">852</td>
+						<td class="text-right">946.5</td>
+						<td class="text-right">1023</td>
+						<td class="text-right">1098</td>
+						<td class="text-right">1174.5</td>
+						<td class="text-right">1249.5</td>
+						<td>  AL</td>
+						<td>
+									<a href="editfairmarketrents.html" class="edit2"><i data-placement="top" data-toggle="tooltip" class="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" class="delete2"><i data-placement="top" data-toggle="tooltip" class="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
+				        </td>
+					</tr>
+					<tr>
+						<td>Birmingham-Hoover, AL HUD Metro FMR Area</td>
+						<td class="text-right">1577.5</td>
+						<td class="text-right">663</td>
+						<td class="text-right">757.5</td>
+						<td class="text-right">852</td>
+						<td class="text-right">946.5</td>
+						<td class="text-right">1023</td>
+						<td class="text-right">1098</td>
+						<td class="text-right">1174.5</td>
+						<td class="text-right">1249.5</td>
+						<td>  AL</td>
+						<td>
+									<a href="editfairmarketrents.html" class="edit2"><i data-placement="top" data-toggle="tooltip" class="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" class="delete2"><i data-placement="top" data-toggle="tooltip" class="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
+				        </td>
+					</tr>
+					<tr>
+						<td>Bullock County, AL</td>
+						<td class="text-right">1152.5</td>
+						<td class="text-right">484.5</td>
+						<td class="text-right">553.5</td>
+						<td class="text-right">622.5</td>
+						<td class="text-right">691.5</td>
+						<td class="text-right">747</td>
+						<td class="text-right">802.5</td>
+						<td class="text-right">858</td>
+						<td class="text-right">913.5</td>
+						<td>  AL</td>
+						<td>
+									<a href="editfairmarketrents.html" class="edit2"><i data-placement="top" data-toggle="tooltip" class="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" class="delete2"><i data-placement="top" data-toggle="tooltip" class="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
+				        </td>
+					</tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+        <!-- page end-->
+        </section>
+    </section>
+    <!--main content end-->
+
+
+</section>
+
+<!-- Modal -->
+          <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="delete" class="modal fade">
+              <div class="modal-dialog modal-md">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                          <h4 class="modal-title">Please Confirm</h4>
+                      </div>
+                      <div class="modal-body">
+       <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+                                    <h4>Are you sure you want to delete?</h4>
+        </div>
+       </div>
+                      </div>
+                      <div class="modal-footer">
+                          <button data-dismiss="modal" class="danger-btn" type="button">Cancel</button>
+                          <button class="main-btn" type="button">Confirm</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- modal -->
+
+<!-- Placed js at the end of the document so the pages load faster -->
+
+<!--Core js-->
+<script src="js/jquery.js"></script>
+<script src="bs3/js/bootstrap.min.js"></script>
+<script class="include" type="text/javascript" src="js/jquery.dcjqaccordion.2.7.js"></script>
+<script src="js/jquery.scrollTo.min.js"></script>
+<script src="js/jQuery-slimScroll-1.3.0/jquery.slimscroll.js"></script>
+<script src="js/jquery.nicescroll.js"></script>
+
+<!--
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+-->
+
+
+<!--common script init for all pages-->
+<script src="js/scripts.js"></script>
+
+<script src="js/modernizr.custom.js"></script>
+
+<script src="js/classie.js"></script>
+<!--<script src="js/uisearch.js"></script>-->
+
+<!--
+<script>
+	Highcharts.chart('cust-container', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Monthly Report'
+    },
+    
+    xAxis: {
+        categories: [
+            'Jan',
+            'Feb',
+            'Mar',
+            'Apr',
+            'May',
+            'Jun',
+            'Jul',
+            'Aug',
+            'Sep',
+            'Oct',
+            'Nov',
+            'Dec'
+        ],
+        crosshair: true
+    },
+    yAxis: {
+        min: 0,
+		max:200,
+        title: {
+            text: 'Value'
+        }
+    },
+    tooltip: {
+        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>{point.y:.f}</b></td></tr>',
+        footerFormat: '</table>',
+        shared: false,
+        useHTML: false
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.1,
+            borderWidth: 0
+        }
+    },
+    series: [{
+        name: 'Total Projects',
+        data: [25, 38, 52, 73, 157, 79, 159, 62, 94, 52, 29, 146],
+		color:'#338b7a'
+    }, {
+        name: 'Total Investors',
+        data: [64, 83, 92, 79, 19, 142, 97, 71, 150, 49, 83, 47],
+		color:'#4997b7'
+
+    }, {
+        name: 'Total Contacts',
+        data: [82, 49, 129, 72, 68, 37, 73, 59, 29, 169, 58, 73],
+		color:'#c3a515'
+
+    }]
+});
+</script>
+-->
+<!--
+<script>
+			new UISearch( document.getElementById( 'sb-search' ) );
+		</script>
+-->
+    <!-- Modal -->
+          <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="popup" class="modal fade">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                          <h4 class="modal-title">Please Confirm</h4>
+                      </div>
+                      <div class="modal-body">
+							<div class="row">
+								<div class="col-md-8 col-md-offset-2">
+<!--
+									<div class="" id="cust-login">
+										<input placeholder="Email" type="email" required>
+									</div>
+-->
+                                    <h4>Are you sure you want to delete?</h4>
+								</div>
+							</div>
+                      </div>
+                      <div class="modal-footer">
+                          <button data-dismiss="modal" class="danger-btn" type="button">Cancel</button>
+                          <button class="main-btn" type="button">Confirm</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+    <script>
+	$(document).on('click', '.browse', function(){
+  var file = $(this).parent().parent().parent().find('.file');
+  file.trigger('click');
+});
+$(document).on('change', '.file', function(){
+  $(this).parent().find('.form-control').val($(this).val().replace(/C:\\fakepath\\/i, ''));
+});
+</script>
+     <script>
+	$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+          <!-- modal -->
+
+</body>
+</html>

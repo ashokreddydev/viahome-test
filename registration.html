@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="ThemeBucket">
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <title>Registered</title>
+
+    <!--Core CSS -->
+    <link href="bs3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-reset.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet" />
+	<link href="css/custom.css" rel="stylesheet" />
+    
+</head>
+  <body class="login-body">
+
+    <div class="container">
+
+      <form class="form-signin form-reg" action="index.html">
+        <h2 class="form-signin-heading">registration now</h2>
+        <div class="reg-wrap" id="reg-login">
+			<div class="col-md-12">
+				<p>Enter your personal details below</p>
+			</div>
+			<div class="col-md-6">
+				<div class="reg-login-info">
+					<input placeholder="First Name" type="text" required>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="reg-login-info">
+					<input placeholder="Last Name" type="text" required>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="reg-login-info" id="">
+					<input placeholder="Address" type="text" required>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="reg-login-info" id="">
+					<input placeholder="Email" type="text" required>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="reg-login-info" id="">
+					<input placeholder="City/Town" type="text" required>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<p> Enter your account details below</p>
+			</div>
+			<div class="col-md-6">
+				<div class="reg-login-info" id="">
+					<input placeholder="User Name" type="text" required>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="reg-login-info" id="">
+					<input placeholder="Password" type="password" required>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="reg-login-info" id="">
+					<input placeholder="Re-type Password" type="password" required>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<label class="active customlabel reg-bottom">
+				  <input type="checkbox" name='email1'><i class="fa fa-square-o"></i><i class="fa fa-check-square-o"></i> <span> I agree to the Terms of Service and Privacy Policy</span>
+				</label>
+				
+			</div>
+            <button class="btn btn-md btn-login btn-block" type="submit" data-toggle="modal" href="#sucess">Submit</button>
+
+            <div class="regalready">
+                Already Registered.
+                <a class="" href="index.html">
+                    Login
+                </a>
+            </div>
+
+        </div>
+
+      </form>
+
+    </div>
+
+
+    <!-- Placed js at the end of the document so the pages load faster -->
+
+    <!--Core js-->
+    <script src="js/jquery.js"></script>
+    <script src="bs3/js/bootstrap.min.js"></script>
+      <!-- Modal -->
+          <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="sucess" class="modal fade">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                          <h4 class="modal-title sucesspopup">Registration Sucessful</h4>
+                      </div>
+                      <div class="modal-body">
+							<div class="row">
+								<div class="col-md-8 col-md-offset-2 sucesspopup">
+									<div class="" id="cust-login">
+										<h4>You have sucessfully registered for viahome<br>
+                                        Please login with your username and password.</h4>
+									</div>
+								</div>
+							</div>
+                      </div>
+                      <div class="modal-footer">
+                          <button class="main-btn" type="button" id="myButton">Return to login</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- modal -->
+      <script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "index.html";
+    };
+</script>
+
+  </body>
+</html>

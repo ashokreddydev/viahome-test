@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="ThemeBucket">
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <title>GetViaHome - Admin Dashboard</title>
+
+    <!--Core CSS -->
+    <link href="bs3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-reset.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet" />
+	 <link href="css/custom.css" rel="stylesheet"/>
+
+</head>
+
+<body>
+
+<section id="container" >
+<!--header start-->
+<header class="header fixed-top clearfix">
+<!--logo start-->
+<div class="brand">
+    <a href="index.html" class="logo">
+        <img src="images/main-logo.png" class="img-responsive" />
+    </a>
+    <div class="sidebar-toggle-box">
+        <div class="fa fa-bars"></div>
+    </div>
+</div>
+<!--logo end-->
+
+
+<div class="top-nav clearfix">
+    <!--search & user info start-->
+    <ul class="nav pull-right top-menu">
+        <!-- <li>
+            <input type="text" class="form-control search" placeholder=" Search">
+        </li> -->
+        <!-- user login dropdown start-->
+        <li class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                <img alt="" src="images/default.png">
+                <span class="username">Admin</span>
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu extended logout">
+                <li><a href="profile.html"><i class=" fa fa-suitcase"></i>Profile</a></li>
+              
+                <li><a href="index.html"><i class="fa fa-key"></i> Log Out</a></li>
+            </ul>
+        </li>
+        <!-- user login dropdown end -->
+        <!-- <li>
+            <div class="toggle-right-box">
+                <div class="fa fa-bars"></div>
+            </div>
+        </li> -->
+    </ul>
+    <!--search & user info end-->
+</div>
+</header>
+<!--header end-->
+<aside>
+    <div id="sidebar" class="nav-collapse">
+        <!-- sidebar menu start-->
+        <div class="leftside-navigation">
+            <ul class="sidebar-menu" id="nav-accordion">
+                <li>
+                    <a href="admin-dashboard.html">
+                        <i class="fa fa-dashboard"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="sub-menu">
+                    <a href="javascript:;" class="active">
+                        <i class="fa fa-building"></i>
+                        <span>Configuration</span>
+                    </a>
+           <ul class="sub">
+                <li class="active"><a href="medianincome.html" data-placement="top" data-toggle="tooltip"  data-original-title="Median  Income">Median Income</a></li>
+                <li><a href="fairmarketrents.html" data-placement="top" data-toggle="tooltip"  data-original-title="Fair Market Rents">FMR Rents</a></li>
+               <li><a href="renovationcostassumptions.html" data-placement="top" data-toggle="tooltip"  data-original-title="Renovation Cost Assumptions">RC Assumptions</a></li>
+
+            </ul>
+                    
+                    
+                </li>
+
+                <li>
+                    <a href="manageusers.html">
+                        <i class="fa fa-users"></i>
+                        <span>Users</span>
+                    </a>
+                </li>
+                 <li>
+                    <a href="admindashboardprojectslist.html">
+                        <i class="fa fa-tasks"></i>
+                        <span>Projects</span>
+                    </a>
+                
+                </li>
+
+
+            </ul>            </div>
+        <!-- sidebar menu end-->
+    </div>
+</aside>
+<!--sidebar end-->
+    <!--main content start-->
+     <section id="main-content">
+        <section class="wrapper">
+		<div class="row">
+			<div class="col-md-12">
+                    <ul class="breadcrumbs-alt">
+                        <li>
+                            <a href="admin-dashboard.html" class="">Dashboard</a>
+                        </li>
+                         <li>
+                            <a class="current" href="#">Edit Median Income</a>
+                        </li>
+                        <!--<li>
+                            <a class="current" href="#">Elements</a>
+                        </li> -->
+                    </ul>
+                </div>
+		</div>
+        <!-- page start-->
+
+        <div class="row">
+            
+            <div class="col-md-12">
+                <section class="panel">
+                    <header class="panel-heading main-bg">
+                        Edit Median Income
+                        <!-- <span class="tools pull-right">
+                            <a href="javascript:;" class="fa fa-chevron-down"></a>
+                            <a href="javascript:;" class="fa fa-cog"></a>
+                            <a href="javascript:;" class="fa fa-times"></a>
+                         </span> -->
+                    </header>
+                    <div class="panel-body">
+                                <div class="position-center">
+                                    
+                                    <form role="form" class="form-horizontal cust-form-group" id="reg-login">
+
+                                        <div class="col-md-6">
+											<div class="form-group cust-form-group">
+												<label for="inputsm">Area Name</label>
+												<input class="form-control input-sm" id="inputsm" type="text" value="Montgomery, AL MSA">
+											</div>
+										</div>
+                                        <div class="col-md-6">
+											<div class="form-group cust-form-group">
+												<label for="inputsm">2017 Median Income</label>
+												<input class="form-control input-sm" id="inputsm" type="text" value="$25080">
+											</div>
+										</div>
+                                        <div class="col-md-6">
+											<div class="form-group cust-form-group">
+												<label for="inputsm">1 Person</label>
+												<input class="form-control input-sm" id="inputsm" type="text" value="$63100">
+											</div>
+										</div>
+                                        <div class="col-md-6">
+											<div class="form-group cust-form-group">
+												<label for="inputsm">2 Person</label>
+												<input class="form-control input-sm" id="inputsm" type="text" value="$59700">
+											</div>
+										</div>
+                                        <div class="col-md-6">
+											<div class="form-group cust-form-group">
+												<label for="inputsm">3 People</label>
+												<input class="form-control input-sm" id="inputsm" type="text" value="$63100">
+											</div>
+										</div>
+                                        
+                                        <div class="col-md-6">
+											<div class="form-group cust-form-group">
+												<label for="inputsm">4 People</label>
+												<input class="form-control input-sm" id="inputsm" type="text" value="$25080">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group cust-form-group">
+												<label for="inputsm">5 People</label>
+												<input class="form-control input-sm" id="inputsm" type="text" value="$63100">
+											</div>
+										</div>
+                                        <div class="col-md-6">
+											<div class="form-group cust-form-group">
+												<label for="inputsm">6 People</label>
+												<input class="form-control input-sm" id="inputsm" type="text" value="$63100">
+											</div>
+										</div>
+                                        <div class="col-md-6">
+											<div class="form-group cust-form-group">
+												<label for="inputsm">7 People</label>
+												<input class="form-control input-sm" id="inputsm" type="text" 
+                                                value="$25080">
+											</div>
+										</div>
+                                        <div class="col-md-6">
+											<div class="form-group cust-form-group">
+												<label for="inputsm">8 People</label>
+												<input class="form-control input-sm" id="inputsm" type="text" value="$63100">
+											</div>
+										</div>
+                                       
+                                        
+                                      
+
+									<div class="col-md-12">
+									<div class=" pull-right profilebtns">
+										<a href="#" class="main-btn">Cancel</a>
+										<a href="javascript:(void);" data-toggle="modal" data-target="#successmsg" class="main-btn">Update</a>
+									</div>
+									</div>
+                                    </form>
+                                </div>
+
+                            
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- page end-->
+        </section>
+    </section>
+     </section>
+
+<!-- Placed js at the end of the document so the pages load faster -->
+    <!-- Modal -->
+          <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="successmsg" class="modal fade">
+              <div class="modal-dialog modal-md">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      </div>
+                      <div class="modal-body">
+        <div class="row">
+      <div class="col-md-12 center-block text-center">
+       <i class="fa fa-check fa-2x success-icon"></i>
+       <h4 class="text-center">Median income updated successfully.</h4>
+      </div>
+        </div>
+                      </div>
+                      <div class="modal-footer text-center center-block">
+                          <a href="medianincome.html"><button type="button" class="default-btn">Ok</button></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- modal -->
+   
+
+<!--Core js-->
+<script src="js/jquery.js"></script>
+    <script>
+	$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+
+
+<script src="js/jquery.fileuploader.min.js" type="text/javascript"></script>
+<script src="js/custom.js" type="text/javascript"></script>
+
+<script src="bs3/js/bootstrap.min.js"></script>
+<script class="include" type="text/javascript" src="js/jquery.dcjqaccordion.2.7.js"></script>
+<script src="js/jquery.scrollTo.min.js"></script>
+<script src="js/jQuery-slimScroll-1.3.0/jquery.slimscroll.js"></script>
+<script src="js/jquery.nicescroll.js"></script>
+<!--Easy Pie Chart-->
+<script src="js/easypiechart/jquery.easypiechart.js"></script>
+<!--Sparkline Chart-->
+<script src="js/sparkline/jquery.sparkline.js"></script>
+<!--jQuery Flot Chart-->
+<script src="js/flot-chart/jquery.flot.js"></script>
+<script src="js/flot-chart/jquery.flot.tooltip.min.js"></script>
+<script src="js/flot-chart/jquery.flot.resize.js"></script>
+<script src="js/flot-chart/jquery.flot.pie.resize.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&AMP;sensor=false"></script>
+
+<!--common script init for all pages-->
+    
+
+    <script src="js/scripts.js"></script>
+
+<script src="js/modernizr.custom.js"></script>
+
+<script src="js/classie.js"></script>
+<script src="js/uisearch.js"></script>
+
+
+
+
+
+<script>
+	$('#Rent').hide();
+	
+   $('#Yesradio').click(function() {
+       if($(this).attr('id') == 'Yesradio') {
+            $('#Rent').show();           
+       }
+
+       else {
+            $('#Rent').hide();   
+       }
+   });
+   $("#Noradio").click(function(){
+	if($(this).attr('id')=='Noradio'){
+		$('#Rent').hide();
+	}
+   })
+
+</script>
+   
+
+</body>
+</html>
